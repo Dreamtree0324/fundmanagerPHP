@@ -1,10 +1,10 @@
 class Fund {
-    constructor(number, name, endDate, total){
+    constructor(number, name, endDate, total, current = 0){
         this.number = number;
         this.name = name;
         this.endDate = endDate;
         this.total = total * 1;
-        this.current = 0;
+        this.current = current * 1;
         this.canvas = null;
     }
 

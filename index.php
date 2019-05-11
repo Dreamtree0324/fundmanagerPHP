@@ -10,6 +10,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>펀드매니저</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        <?php
+            if(isset($_SESSION['user'])){
+                $u = $_SESSION['user'];
+                echo "let user = {name: '" . $u->name . "', id: '" . $u->id . "'};";
+            } else{
+                echo "let user = null;";
+            }
+            
+        ?>
+    </script>
     <script src="js/App.js"></script>
     <script src="js/Fund.js"></script>
     <script src="js/Investor.js"></script>
